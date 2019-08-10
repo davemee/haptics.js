@@ -11,12 +11,12 @@
       <link rel="stylesheet" href="css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src=../haptics.js"></script>
-      <script type="text/javascript" src="example.js"></script>
+      <!--script type="text/javascript" src="example.js"></script-->
   </head>
   <body>
   <div class="container">
     <input type="number" id="pattern-duration" value="500">
-    <a href="#" class="btn btn-lg btn-default btn-block" id="activate-fade-in" onclick="javascript:Haptics.fadeIn([500, 100, 500]);">Fade In</a>
+    <a href="#" class="btn btn-lg btn-default btn-block" id="activate-fade-in" onclick="window.navigator.vibrate(150);/*javascript:Haptics.fadeIn([500, 100, 500]);*/">Fade In</a>
   </div> <!-- /container -->
   </body>
 </html>
